@@ -19,7 +19,7 @@ func GetUserById(userId string) (*model.UserData, error) {
 	return nil, errors.New("user not found with given userId")
 }
 
-func generateUserId(name, email string) string {
+func generateUserId(email, name string) string {
 	return email + "_" + name
 }
 
